@@ -1,0 +1,20 @@
+def main():
+    print("Welcome to my hub!")
+
+    while True:
+        user_input = input("Enter a number (or 'q' to quit): ")
+        
+        if user_input.lower() == 'q':
+            print("Exiting my hub . Goodbye hope to see you again!")
+            break
+        
+        try:
+            number = int(user_input)
+            square = number ** 2
+            print(f"The square of {number} is: {square}")
+        except ValueError:
+            print("Please enter a valid number.")
+
+if __name__ == "__main__":
+    main()
+    
